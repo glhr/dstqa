@@ -1,6 +1,6 @@
-// Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-// SPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0
-// Licensed under the Amazon Software License  http://aws.amazon.com/asl/
+# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0
+# Licensed under the Amazon Software License  http://aws.amazon.com/asl/
 
 import pdb
 import math
@@ -513,7 +513,7 @@ class DSTQA(Model):
       # arithmetic.
       # (batch_size, passage_length * passage_length)
       best_spans = valid_span_log_probs.view(batch_size, -1).argmax(-1)
-      span_start_indices = best_spans // passage_length
+      span_start_indices = best_spans # passage_length
       span_end_indices = best_spans % passage_length
       return torch.stack([span_start_indices, span_end_indices], dim=-1)
 
