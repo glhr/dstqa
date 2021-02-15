@@ -1,0 +1,86 @@
+.
+├── calc_elmo_embeddings.py
+├── calc_elmo.sh
+├── config_nosp.jsonnet
+├── config_sp.jsonnet
+├── create_data.py
+├── data
+│   ├── dev_dials.json
+│   ├── dev.json
+│   ├── elmo_embeddings
+│   │   ├── dev
+│   │   ├── test
+│   │   └── train
+│   ├── multi-woz
+│   │   ├── data.json
+│   │   ├── dialogue_acts.json
+│   │   ├── __MACOSX
+│   │   │   └── MULTIWOZ2 2
+│   │   ├── MULTIWOZ2 2
+│   │   │   ├── attraction_db.json
+│   │   │   ├── data.json
+│   │   │   ├── dialogue_acts.json
+│   │   │   ├── hospital_db.json
+│   │   │   ├── hotel_db.json
+│   │   │   ├── ontology.json
+│   │   │   ├── police_db.json
+│   │   │   ├── README.json
+│   │   │   ├── restaurant_db.json
+│   │   │   ├── taxi_db.json
+│   │   │   ├── testListFile.json
+│   │   │   ├── train_db.json
+│   │   │   └── valListFile.json
+│   │   ├── testListFile.json
+│   │   └── valListFile.json
+│   ├── prediction.json
+│   ├── test_dials.json
+│   ├── test.json
+│   ├── train_dials.json
+│   ├── train.json
+│   └── trainListFile
+├── dstqa
+│   ├── accuracy.py
+│   ├── dstqa_predictor.py
+│   ├── dstqa.py
+│   ├── dstqa_reader.py
+│   ├── dstqa_util.py
+│   ├── __init__.py
+│   └── __pycache__
+├── formulate_pred_belief_state.py
+├── LICENSE
+├── mapping.pair
+├── model
+│   ├── config.json
+│   ├── stderr.log
+│   └── stdout.log
+├── multiwoz_2.1_format.py
+├── multiwoz_format.py
+├── NOTICE
+├── ontology
+│   ├── area_value_list.txt
+│   ├── attraction_name_value_list.txt
+│   ├── attraction_type_value_list.txt
+│   ├── day_value_list.txt
+│   ├── domain_slot_list_nosp.txt
+│   ├── domain_slot_list_sp.txt
+│   ├── food_value_list.txt
+│   ├── hotel_name_value_list.txt
+│   ├── hotel_stars_value_list.txt
+│   ├── hotel_stay_value_list.txt
+│   ├── hotel_type_value_list.txt
+│   ├── people_value_list.txt
+│   ├── price_range_value_list.txt
+│   ├── restaurant_name_value_list.txt
+│   ├── taxi_from_to_value_list.txt
+│   ├── time_value_list.txt
+│   ├── train_station_value_list.txt
+│   └── yes_no_value_list.txt
+├── predict.sh
+├── README.md
+├── requirements.txt
+├── THIRD-PARTY
+├── train_nosp.sh
+├── train_sp.sh
+└── tree
+
+10 directories, 73 files
