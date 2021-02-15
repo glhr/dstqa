@@ -1,0 +1,212 @@
+2020-09-28 18:18:27,150 - INFO - allennlp.common.params - random_seed = 13370
+2020-09-28 18:18:27,150 - INFO - allennlp.common.params - numpy_seed = 1337
+2020-09-28 18:18:27,150 - INFO - allennlp.common.params - pytorch_seed = 133
+2020-09-28 18:18:27,151 - INFO - allennlp.common.checks - Pytorch version: 1.6.0
+2020-09-28 18:18:27,152 - INFO - allennlp.common.params - evaluate_on_test = False
+2020-09-28 18:18:27,153 - INFO - allennlp.common.params - validation_dataset_reader = None
+2020-09-28 18:18:27,153 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.dataset_readers.dataset_reader.DatasetReader'> from params {'domain_slot_list_path': './ontology/domain_slot_list_nosp.txt', 'lazy': False, 'token_indexers': {'token_characters': {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5, 'type': 'characters'}}, 'tokenizer': {'type': 'word', 'word_splitter': {'ner': False, 'pos_tags': False, 'type': 'spacy'}}, 'type': 'dstqa'} and extras set()
+2020-09-28 18:18:27,153 - INFO - allennlp.common.params - dataset_reader.type = dstqa
+2020-09-28 18:18:27,153 - INFO - allennlp.common.from_params - instantiating class <class 'dstqa.dstqa_reader.DSTQAReader'> from params {'domain_slot_list_path': './ontology/domain_slot_list_nosp.txt', 'lazy': False, 'token_indexers': {'token_characters': {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5, 'type': 'characters'}}, 'tokenizer': {'type': 'word', 'word_splitter': {'ner': False, 'pos_tags': False, 'type': 'spacy'}}} and extras set()
+2020-09-28 18:18:27,153 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.tokenizers.tokenizer.Tokenizer'> from params {'type': 'word', 'word_splitter': {'ner': False, 'pos_tags': False, 'type': 'spacy'}} and extras set()
+2020-09-28 18:18:27,154 - INFO - allennlp.common.params - dataset_reader.tokenizer.type = word
+2020-09-28 18:18:27,154 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.tokenizers.word_tokenizer.WordTokenizer'> from params {'word_splitter': {'ner': False, 'pos_tags': False, 'type': 'spacy'}} and extras set()
+2020-09-28 18:18:27,154 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.tokenizers.word_splitter.WordSplitter'> from params {'ner': False, 'pos_tags': False, 'type': 'spacy'} and extras set()
+2020-09-28 18:18:27,154 - INFO - allennlp.common.params - dataset_reader.tokenizer.word_splitter.type = spacy
+2020-09-28 18:18:27,154 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.tokenizers.word_splitter.SpacyWordSplitter'> from params {'ner': False, 'pos_tags': False} and extras set()
+2020-09-28 18:18:27,154 - INFO - allennlp.common.params - dataset_reader.tokenizer.word_splitter.language = en_core_web_sm
+2020-09-28 18:18:27,154 - INFO - allennlp.common.params - dataset_reader.tokenizer.word_splitter.pos_tags = False
+2020-09-28 18:18:27,155 - INFO - allennlp.common.params - dataset_reader.tokenizer.word_splitter.parse = False
+2020-09-28 18:18:27,155 - INFO - allennlp.common.params - dataset_reader.tokenizer.word_splitter.ner = False
+2020-09-28 18:18:27,155 - INFO - allennlp.common.params - dataset_reader.tokenizer.word_splitter.keep_spacy_tokens = False
+2020-09-28 18:18:27,155 - INFO - allennlp.common.params - dataset_reader.tokenizer.word_splitter.split_on_spaces = False
+2020-09-28 18:18:27,272 - INFO - allennlp.common.params - dataset_reader.tokenizer.start_tokens = None
+2020-09-28 18:18:27,272 - INFO - allennlp.common.params - dataset_reader.tokenizer.end_tokens = None
+2020-09-28 18:18:27,272 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_indexer.TokenIndexer from params {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5, 'type': 'characters'} and extras set()
+2020-09-28 18:18:27,272 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.type = characters
+2020-09-28 18:18:27,272 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_characters_indexer.TokenCharactersIndexer from params {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5} and extras set()
+2020-09-28 18:18:27,273 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.namespace = token_characters
+2020-09-28 18:18:27,273 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.tokenizers.character_tokenizer.CharacterTokenizer'> from params {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]} and extras set()
+2020-09-28 18:18:27,273 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.byte_encoding = utf-8
+2020-09-28 18:18:27,273 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.lowercase_characters = False
+2020-09-28 18:18:27,273 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.start_tokens = [259]
+2020-09-28 18:18:27,273 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.end_tokens = [260]
+2020-09-28 18:18:27,273 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.start_tokens = None
+2020-09-28 18:18:27,273 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.end_tokens = None
+2020-09-28 18:18:27,274 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.min_padding_length = 5
+2020-09-28 18:18:27,274 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.token_min_padding_length = 0
+2020-09-28 18:18:27,274 - INFO - allennlp.common.params - dataset_reader.lazy = False
+2020-09-28 18:18:27,274 - INFO - allennlp.common.params - dataset_reader.domain_slot_list_path = ./ontology/domain_slot_list_nosp.txt
+2020-09-28 18:18:27,276 - INFO - allennlp.common.params - train_data_path = ./data/train.json
+2020-09-28 18:18:27,276 - INFO - allennlp.training.util - Reading training data from ./data/train.json
+2020-09-28 18:18:27,277 - INFO - dstqa.dstqa_reader - Reading file at ./data/train.json
+2020-09-28 18:18:28,097 - INFO - dstqa.dstqa_reader - Reading the dataset
+2020-09-28 18:23:41,217 - INFO - allennlp.common.params - validation_data_path = ./data/dev.json
+2020-09-28 18:23:41,217 - INFO - allennlp.training.util - Reading validation data from ./data/dev.json
+2020-09-28 18:23:41,217 - INFO - dstqa.dstqa_reader - Reading file at ./data/dev.json
+2020-09-28 18:23:41,262 - INFO - dstqa.dstqa_reader - Reading the dataset
+2020-09-28 18:24:23,157 - INFO - allennlp.common.params - test_data_path = None
+2020-09-28 18:24:23,172 - INFO - allennlp.training.trainer_pieces - From dataset instances, validation, train will be considered for vocabulary creation.
+2020-09-28 18:24:23,172 - INFO - allennlp.common.params - vocabulary.type = None
+2020-09-28 18:24:23,172 - INFO - allennlp.common.params - vocabulary.extend = False
+2020-09-28 18:24:23,172 - INFO - allennlp.common.params - vocabulary.directory_path = None
+2020-09-28 18:24:23,172 - INFO - allennlp.common.params - vocabulary.min_count = {'tokens': 0}
+2020-09-28 18:24:23,172 - INFO - allennlp.common.params - vocabulary.max_vocab_size = None
+2020-09-28 18:24:23,172 - INFO - allennlp.common.params - vocabulary.non_padded_namespaces = ('*tags', '*labels')
+2020-09-28 18:24:23,173 - INFO - allennlp.common.params - vocabulary.pretrained_files = {}
+2020-09-28 18:24:23,173 - INFO - allennlp.common.params - vocabulary.min_pretrained_embeddings = None
+2020-09-28 18:24:23,173 - INFO - allennlp.common.params - vocabulary.only_include_pretrained_words = False
+2020-09-28 18:24:23,173 - INFO - allennlp.common.params - vocabulary.tokens_to_add = None
+2020-09-28 18:24:23,173 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2020-09-28 18:24:33,735 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.models.model.Model'> from params {'base_dim': 612, 'bi_dropout': 0.5, 'class_prediction_layer': {'activations': ['linear'], 'hidden_dims': [612], 'input_dim': 612, 'num_layers': 1}, 'domain_slot_list_path': './ontology/domain_slot_list_nosp.txt', 'dropout': 0.5, 'elmo_embedding_path': './data/elmo_embeddings/all/', 'initializer': [], 'loss_scale_by_num_values': False, 'phrase_layer': {'bidirectional': True, 'hidden_size': 306, 'input_size': 800, 'num_layers': 1, 'type': 'gru'}, 'span_end_encoder': {'activations': 'relu', 'hidden_dims': 612, 'input_dim': 612, 'num_layers': 1}, 'span_label_predictor': {'activations': ['relu', 'linear'], 'hidden_dims': [612, 3], 'input_dim': 612, 'num_layers': 2}, 'span_prediction_layer': {'activations': ['linear'], 'hidden_dims': [612], 'input_dim': 612, 'num_layers': 1}, 'span_start_encoder': {'activations': 'relu', 'hidden_dims': 612, 'input_dim': 612, 'num_layers': 1}, 'symbol_embedder': {'symbols': {'embedding_dim': 128, 'num_embeddings': 40, 'type': 'embedding'}}, 'text_field_char_embedder': {'token_characters': {'dropout': 0, 'embedding': {'embedding_dim': 20, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 20, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'}}, 'text_field_embedder': {'allow_unmatched_keys': True, 'elmo': {'do_layer_norm': False, 'dropout': 0, 'options_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_options.json', 'requires_grad': False, 'type': 'elmo_token_embedder', 'weight_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_weights.hdf5'}}, 'token_indexers': {'elmo': {'type': 'elmo_characters'}, 'token_characters': {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5, 'type': 'characters'}}, 'type': 'dstqa', 'use_graph': True, 'use_pre_calc_elmo_embeddings': True, 'word_embeddings': 'elmo'} and extras {'vocab'}
+2020-09-28 18:24:33,735 - INFO - allennlp.common.params - model.type = dstqa
+2020-09-28 18:24:33,735 - INFO - allennlp.common.from_params - instantiating class <class 'dstqa.dstqa.DSTQA'> from params {'base_dim': 612, 'bi_dropout': 0.5, 'class_prediction_layer': {'activations': ['linear'], 'hidden_dims': [612], 'input_dim': 612, 'num_layers': 1}, 'domain_slot_list_path': './ontology/domain_slot_list_nosp.txt', 'dropout': 0.5, 'elmo_embedding_path': './data/elmo_embeddings/all/', 'initializer': [], 'loss_scale_by_num_values': False, 'phrase_layer': {'bidirectional': True, 'hidden_size': 306, 'input_size': 800, 'num_layers': 1, 'type': 'gru'}, 'span_end_encoder': {'activations': 'relu', 'hidden_dims': 612, 'input_dim': 612, 'num_layers': 1}, 'span_label_predictor': {'activations': ['relu', 'linear'], 'hidden_dims': [612, 3], 'input_dim': 612, 'num_layers': 2}, 'span_prediction_layer': {'activations': ['linear'], 'hidden_dims': [612], 'input_dim': 612, 'num_layers': 1}, 'span_start_encoder': {'activations': 'relu', 'hidden_dims': 612, 'input_dim': 612, 'num_layers': 1}, 'symbol_embedder': {'symbols': {'embedding_dim': 128, 'num_embeddings': 40, 'type': 'embedding'}}, 'text_field_char_embedder': {'token_characters': {'dropout': 0, 'embedding': {'embedding_dim': 20, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 20, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'}}, 'text_field_embedder': {'allow_unmatched_keys': True, 'elmo': {'do_layer_norm': False, 'dropout': 0, 'options_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_options.json', 'requires_grad': False, 'type': 'elmo_token_embedder', 'weight_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_weights.hdf5'}}, 'token_indexers': {'elmo': {'type': 'elmo_characters'}, 'token_characters': {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5, 'type': 'characters'}}, 'use_graph': True, 'use_pre_calc_elmo_embeddings': True, 'word_embeddings': 'elmo'} and extras {'vocab'}
+2020-09-28 18:24:33,736 - INFO - allennlp.common.params - model.base_dim = 612
+2020-09-28 18:24:33,736 - INFO - allennlp.common.params - model.loss_scale_by_num_values = False
+2020-09-28 18:24:33,736 - INFO - allennlp.common.params - model.use_pre_calc_elmo_embeddings = True
+2020-09-28 18:24:33,736 - INFO - allennlp.common.params - model.elmo_embedding_path = ./data/elmo_embeddings/all/
+2020-09-28 18:24:33,736 - INFO - allennlp.common.params - model.domain_slot_list_path = ./ontology/domain_slot_list_nosp.txt
+2020-09-28 18:24:33,736 - INFO - allennlp.common.params - model.word_embeddings = elmo
+2020-09-28 18:24:33,736 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_indexer.TokenIndexer from params {'type': 'elmo_characters'} and extras {'vocab'}
+2020-09-28 18:24:33,736 - INFO - allennlp.common.params - model.token_indexers.elmo.type = elmo_characters
+2020-09-28 18:24:33,736 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.elmo_indexer.ELMoTokenCharactersIndexer from params {} and extras {'vocab'}
+2020-09-28 18:24:33,737 - INFO - allennlp.common.params - model.token_indexers.elmo.namespace = elmo_characters
+2020-09-28 18:24:33,737 - INFO - allennlp.common.params - model.token_indexers.elmo.tokens_to_add = None
+2020-09-28 18:24:33,737 - INFO - allennlp.common.params - model.token_indexers.elmo.token_min_padding_length = 0
+2020-09-28 18:24:33,737 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_indexer.TokenIndexer from params {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5, 'type': 'characters'} and extras {'vocab'}
+2020-09-28 18:24:33,737 - INFO - allennlp.common.params - model.token_indexers.token_characters.type = characters
+2020-09-28 18:24:33,737 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_characters_indexer.TokenCharactersIndexer from params {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]}, 'min_padding_length': 5} and extras {'vocab'}
+2020-09-28 18:24:33,737 - INFO - allennlp.common.params - model.token_indexers.token_characters.namespace = token_characters
+2020-09-28 18:24:33,737 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.tokenizers.character_tokenizer.CharacterTokenizer'> from params {'byte_encoding': 'utf-8', 'end_tokens': [260], 'start_tokens': [259]} and extras {'vocab'}
+2020-09-28 18:24:33,737 - INFO - allennlp.common.params - model.token_indexers.token_characters.character_tokenizer.byte_encoding = utf-8
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.token_indexers.token_characters.character_tokenizer.lowercase_characters = False
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.token_indexers.token_characters.character_tokenizer.start_tokens = [259]
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.token_indexers.token_characters.character_tokenizer.end_tokens = [260]
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.token_indexers.token_characters.start_tokens = None
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.token_indexers.token_characters.end_tokens = None
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.token_indexers.token_characters.min_padding_length = 5
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.token_indexers.token_characters.token_min_padding_length = 0
+2020-09-28 18:24:33,738 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.text_field_embedders.text_field_embedder.TextFieldEmbedder'> from params {'allow_unmatched_keys': True, 'elmo': {'do_layer_norm': False, 'dropout': 0, 'options_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_options.json', 'requires_grad': False, 'type': 'elmo_token_embedder', 'weight_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_weights.hdf5'}} and extras {'vocab'}
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.text_field_embedder.type = basic
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.text_field_embedder.embedder_to_indexer_map = None
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.text_field_embedder.allow_unmatched_keys = True
+2020-09-28 18:24:33,738 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders = None
+2020-09-28 18:24:33,739 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.token_embedders.token_embedder.TokenEmbedder'> from params {'do_layer_norm': False, 'dropout': 0, 'options_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_options.json', 'requires_grad': False, 'type': 'elmo_token_embedder', 'weight_file': 'https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_weights.hdf5'} and extras {'vocab'}
+2020-09-28 18:24:33,739 - INFO - allennlp.common.params - model.text_field_embedder.elmo.type = elmo_token_embedder
+2020-09-28 18:24:37,117 - INFO - allennlp.common.params - model.text_field_embedder.elmo.options_file = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_options.json
+2020-09-28 18:24:37,118 - INFO - allennlp.common.params - model.text_field_embedder.elmo.weight_file = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x2048_256_2048cnn_1xhighway/elmo_2x2048_256_2048cnn_1xhighway_weights.hdf5
+2020-09-28 18:24:37,118 - INFO - allennlp.common.params - model.text_field_embedder.elmo.requires_grad = False
+2020-09-28 18:24:37,119 - INFO - allennlp.common.params - model.text_field_embedder.elmo.do_layer_norm = False
+2020-09-28 18:24:37,119 - INFO - allennlp.common.params - model.text_field_embedder.elmo.dropout = 0
+2020-09-28 18:24:37,119 - INFO - allennlp.common.params - model.text_field_embedder.elmo.namespace_to_cache = None
+2020-09-28 18:24:37,119 - INFO - allennlp.common.params - model.text_field_embedder.elmo.projection_dim = None
+2020-09-28 18:24:37,119 - INFO - allennlp.common.params - model.text_field_embedder.elmo.scalar_mix_parameters = None
+2020-09-28 18:24:37,120 - INFO - allennlp.modules.elmo - Initializing ELMo
+2020-09-28 18:24:58,022 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.text_field_embedders.text_field_embedder.TextFieldEmbedder'> from params {'token_characters': {'dropout': 0, 'embedding': {'embedding_dim': 20, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 20, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'}} and extras {'vocab'}
+2020-09-28 18:24:58,022 - INFO - allennlp.common.params - model.text_field_char_embedder.type = basic
+2020-09-28 18:24:58,023 - INFO - allennlp.common.params - model.text_field_char_embedder.embedder_to_indexer_map = None
+2020-09-28 18:24:58,023 - INFO - allennlp.common.params - model.text_field_char_embedder.allow_unmatched_keys = False
+2020-09-28 18:24:58,023 - INFO - allennlp.common.params - model.text_field_char_embedder.token_embedders = None
+2020-09-28 18:24:58,023 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.token_embedders.token_embedder.TokenEmbedder'> from params {'dropout': 0, 'embedding': {'embedding_dim': 20, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 20, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'} and extras {'vocab'}
+2020-09-28 18:24:58,023 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.type = character_encoding
+2020-09-28 18:24:58,023 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.num_embeddings = 262
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.vocab_namespace = None
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.embedding_dim = 20
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.pretrained_file = None
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.projection_dim = None
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.trainable = True
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.padding_index = None
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.max_norm = None
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.norm_type = 2.0
+2020-09-28 18:24:58,024 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.scale_grad_by_freq = False
+2020-09-28 18:24:58,025 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.embedding.sparse = False
+2020-09-28 18:24:58,025 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2vec_encoders.seq2vec_encoder.Seq2VecEncoder'> from params {'embedding_dim': 20, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'} and extras set()
+2020-09-28 18:24:58,025 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.encoder.type = cnn
+2020-09-28 18:24:58,025 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2vec_encoders.cnn_encoder.CnnEncoder'> from params {'embedding_dim': 20, 'ngram_filter_sizes': [5], 'num_filters': 100} and extras set()
+2020-09-28 18:24:58,025 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.encoder.embedding_dim = 20
+2020-09-28 18:24:58,026 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.encoder.num_filters = 100
+2020-09-28 18:24:58,026 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.encoder.ngram_filter_sizes = [5]
+2020-09-28 18:24:58,026 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.encoder.output_dim = None
+2020-09-28 18:24:58,026 - INFO - allennlp.common.registrable - instantiating registered subclass relu of <class 'allennlp.nn.activations.Activation'>
+2020-09-28 18:24:58,027 - INFO - allennlp.common.params - model.text_field_char_embedder.token_characters.dropout = 0
+2020-09-28 18:24:58,027 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.text_field_embedders.text_field_embedder.TextFieldEmbedder'> from params {'symbols': {'embedding_dim': 128, 'num_embeddings': 40, 'type': 'embedding'}} and extras {'vocab'}
+2020-09-28 18:24:58,027 - INFO - allennlp.common.params - model.symbol_embedder.type = basic
+2020-09-28 18:24:58,028 - INFO - allennlp.common.params - model.symbol_embedder.embedder_to_indexer_map = None
+2020-09-28 18:24:58,028 - INFO - allennlp.common.params - model.symbol_embedder.allow_unmatched_keys = False
+2020-09-28 18:24:58,028 - INFO - allennlp.common.params - model.symbol_embedder.token_embedders = None
+2020-09-28 18:24:58,028 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.token_embedders.token_embedder.TokenEmbedder'> from params {'embedding_dim': 128, 'num_embeddings': 40, 'type': 'embedding'} and extras {'vocab'}
+2020-09-28 18:24:58,028 - INFO - allennlp.common.params - model.symbol_embedder.symbols.type = embedding
+2020-09-28 18:24:58,028 - INFO - allennlp.common.params - model.symbol_embedder.symbols.num_embeddings = 40
+2020-09-28 18:24:58,028 - INFO - allennlp.common.params - model.symbol_embedder.symbols.vocab_namespace = None
+2020-09-28 18:24:58,028 - INFO - allennlp.common.params - model.symbol_embedder.symbols.embedding_dim = 128
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.pretrained_file = None
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.projection_dim = None
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.trainable = True
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.padding_index = None
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.max_norm = None
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.norm_type = 2.0
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.scale_grad_by_freq = False
+2020-09-28 18:24:58,029 - INFO - allennlp.common.params - model.symbol_embedder.symbols.sparse = False
+2020-09-28 18:24:58,030 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder'> from params {'bidirectional': True, 'hidden_size': 306, 'input_size': 800, 'num_layers': 1, 'type': 'gru'} and extras {'vocab'}
+2020-09-28 18:24:58,030 - INFO - allennlp.common.params - model.phrase_layer.type = gru
+2020-09-28 18:24:58,030 - INFO - allennlp.common.params - model.phrase_layer.batch_first = True
+2020-09-28 18:24:58,030 - INFO - allennlp.common.params - model.phrase_layer.stateful = False
+2020-09-28 18:24:58,030 - INFO - allennlp.common.params - Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+2020-09-28 18:24:58,030 - INFO - allennlp.common.params - CURRENTLY DEFINED PARAMETERS: 
+2020-09-28 18:24:58,030 - INFO - allennlp.common.params - model.phrase_layer.bidirectional = True
+2020-09-28 18:24:58,030 - INFO - allennlp.common.params - model.phrase_layer.hidden_size = 306
+2020-09-28 18:24:58,031 - INFO - allennlp.common.params - model.phrase_layer.input_size = 800
+2020-09-28 18:24:58,031 - INFO - allennlp.common.params - model.phrase_layer.num_layers = 1
+2020-09-28 18:24:58,031 - INFO - allennlp.common.params - model.phrase_layer.batch_first = True
+2020-09-28 18:24:58,049 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.feedforward.FeedForward'> from params {'activations': ['linear'], 'hidden_dims': [612], 'input_dim': 612, 'num_layers': 1} and extras {'vocab'}
+2020-09-28 18:24:58,049 - INFO - allennlp.common.params - model.class_prediction_layer.input_dim = 612
+2020-09-28 18:24:58,049 - INFO - allennlp.common.params - model.class_prediction_layer.num_layers = 1
+2020-09-28 18:24:58,049 - INFO - allennlp.common.params - model.class_prediction_layer.hidden_dims = [612]
+2020-09-28 18:24:58,050 - INFO - allennlp.common.params - model.class_prediction_layer.hidden_dims = [612]
+2020-09-28 18:24:58,050 - INFO - allennlp.common.params - model.class_prediction_layer.activations = ['linear']
+2020-09-28 18:24:58,050 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.nn.activations.Activation'> from params ['linear'] and extras {'vocab'}
+2020-09-28 18:24:58,050 - INFO - allennlp.common.params - model.class_prediction_layer.activations = ['linear']
+2020-09-28 18:24:58,050 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.nn.activations.Activation'> from params linear and extras {'vocab'}
+2020-09-28 18:24:58,050 - INFO - allennlp.common.params - type = linear
+2020-09-28 18:24:58,051 - INFO - allennlp.common.params - model.class_prediction_layer.dropout = 0.0
+2020-09-28 18:24:58,054 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.feedforward.FeedForward'> from params {'activations': ['linear'], 'hidden_dims': [612], 'input_dim': 612, 'num_layers': 1} and extras {'vocab'}
+2020-09-28 18:24:58,054 - INFO - allennlp.common.params - model.span_prediction_layer.input_dim = 612
+2020-09-28 18:24:58,054 - INFO - allennlp.common.params - model.span_prediction_layer.num_layers = 1
+2020-09-28 18:24:58,055 - INFO - allennlp.common.params - model.span_prediction_layer.hidden_dims = [612]
+2020-09-28 18:24:58,055 - INFO - allennlp.common.params - model.span_prediction_layer.hidden_dims = [612]
+2020-09-28 18:24:58,055 - INFO - allennlp.common.params - model.span_prediction_layer.activations = ['linear']
+2020-09-28 18:24:58,055 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.nn.activations.Activation'> from params ['linear'] and extras {'vocab'}
+2020-09-28 18:24:58,055 - INFO - allennlp.common.params - model.span_prediction_layer.activations = ['linear']
+2020-09-28 18:24:58,055 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.nn.activations.Activation'> from params linear and extras {'vocab'}
+2020-09-28 18:24:58,055 - INFO - allennlp.common.params - type = linear
+2020-09-28 18:24:58,056 - INFO - allennlp.common.params - model.span_prediction_layer.dropout = 0.0
+2020-09-28 18:24:58,059 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.feedforward.FeedForward'> from params {'activations': 'relu', 'hidden_dims': 612, 'input_dim': 612, 'num_layers': 1} and extras {'vocab'}
+2020-09-28 18:24:58,059 - INFO - allennlp.common.params - model.span_start_encoder.input_dim = 612
+2020-09-28 18:24:58,059 - INFO - allennlp.common.params - model.span_start_encoder.num_layers = 1
+2020-09-28 18:24:58,059 - INFO - allennlp.common.params - model.span_start_encoder.hidden_dims = 612
+2020-09-28 18:24:58,060 - INFO - allennlp.common.params - model.span_start_encoder.activations = relu
+2020-09-28 18:24:58,060 - INFO - allennlp.common.registrable - instantiating registered subclass relu of <class 'allennlp.nn.activations.Activation'>
+2020-09-28 18:24:58,060 - INFO - allennlp.common.params - model.span_start_encoder.dropout = 0.0
+2020-09-28 18:24:58,063 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.feedforward.FeedForward'> from params {'activations': 'relu', 'hidden_dims': 612, 'input_dim': 612, 'num_layers': 1} and extras {'vocab'}
+2020-09-28 18:24:58,063 - INFO - allennlp.common.params - model.span_end_encoder.input_dim = 612
+2020-09-28 18:24:58,063 - INFO - allennlp.common.params - model.span_end_encoder.num_layers = 1
+2020-09-28 18:24:58,063 - INFO - allennlp.common.params - model.span_end_encoder.hidden_dims = 612
+2020-09-28 18:24:58,064 - INFO - allennlp.common.params - model.span_end_encoder.activations = relu
+2020-09-28 18:24:58,064 - INFO - allennlp.common.registrable - instantiating registered subclass relu of <class 'allennlp.nn.activations.Activation'>
+2020-09-28 18:24:58,064 - INFO - allennlp.common.params - model.span_end_encoder.dropout = 0.0
+2020-09-28 18:24:58,067 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.feedforward.FeedForward'> from params {'activations': ['relu', 'linear'], 'hidden_dims': [612, 3], 'input_dim': 612, 'num_layers': 2} and extras {'vocab'}
+2020-09-28 18:24:58,067 - INFO - allennlp.common.params - model.span_label_predictor.input_dim = 612
+2020-09-28 18:24:58,067 - INFO - allennlp.common.params - model.span_label_predictor.num_layers = 2
+2020-09-28 18:24:58,067 - INFO - allennlp.common.params - model.span_label_predictor.hidden_dims = [612, 3]
+2020-09-28 18:24:58,067 - INFO - allennlp.common.params - model.span_label_predictor.hidden_dims = [612, 3]
+2020-09-28 18:24:58,068 - INFO - allennlp.common.params - model.span_label_predictor.activations = ['relu', 'linear']
+2020-09-28 18:24:58,068 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.nn.activations.Activation'> from params ['relu', 'linear'] and extras {'vocab'}
+2020-09-28 18:24:58,068 - INFO - allennlp.common.params - model.span_label_predictor.activations = ['relu', 'linear']
+2020-09-28 18:24:58,068 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.nn.activations.Activation'> from params relu and extras {'vocab'}
+2020-09-28 18:24:58,068 - INFO - allennlp.common.params - type = relu
+2020-09-28 18:24:58,068 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.nn.activations.Activation'> from params linear and extras {'vocab'}
+2020-09-28 18:24:58,068 - INFO - allennlp.common.params - type = linear
+2020-09-28 18:24:58,069 - INFO - allennlp.common.params - model.span_label_predictor.dropout = 0.0
+2020-09-28 18:24:58,072 - INFO - allennlp.common.params - model.initializer = []
+2020-09-28 18:24:58,072 - INFO - allennlp.common.params - model.use_graph = True
+2020-09-28 18:24:58,072 - INFO - allennlp.common.params - model.bi_dropout = 0.5
+2020-09-28 18:24:58,072 - INFO - allennlp.common.params - model.dropout = 0.5

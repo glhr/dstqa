@@ -26,9 +26,9 @@ local phrase_layer_type = "gru"; # gru or stacked_self_attention
             "pos_tags": false,
             "ner": false,
           },
-        }, 
+        },
         "token_indexers": if use_pre_calc_elmo_embeddings == false then {
-            [if word_embeddings == "glove" then "tokens" else "elmo"]: 
+            [if word_embeddings == "glove" then "tokens" else "elmo"]:
             if word_embeddings == "glove" then {"type": "single_id"}
             else {"type": "elmo_characters"},
             "token_characters": {
@@ -91,7 +91,7 @@ local phrase_layer_type = "gru"; # gru or stacked_self_attention
         "word_embeddings": word_embeddings,
         "initializer": [],
         "token_indexers": {
-            [if word_embeddings == "glove" then "tokens" else "elmo"]: 
+            [if word_embeddings == "glove" then "tokens" else "elmo"]:
             if word_embeddings == "glove" then {"type": "single_id"}
             else {"type": "elmo_characters"},
             "token_characters": {
@@ -151,7 +151,7 @@ local phrase_layer_type = "gru"; # gru or stacked_self_attention
             "embedding_dim": symbol_dim
           }
         },
-        "phrase_layer": 
+        "phrase_layer":
           if phrase_layer_type == "gru" then {
             "type": "gru",
             "bidirectional": true,
@@ -204,7 +204,7 @@ local phrase_layer_type = "gru"; # gru or stacked_self_attention
     "trainer": {
         "num_serialized_models_to_keep": 1,
         "keep_serialized_model_every_num_seconds": 60 * 30,
-        "cuda_device": 0,
+        "cuda_device": -1,
         "num_epochs": 1000,
         "optimizer": {
             "type": "adam",
@@ -224,4 +224,3 @@ local phrase_layer_type = "gru"; # gru or stacked_self_attention
         ]
     }
 }
-
