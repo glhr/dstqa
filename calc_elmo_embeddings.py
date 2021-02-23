@@ -52,6 +52,7 @@ def read_dataset(file_path):
 
 import torch
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(device)
 
 def calc_elmo_embeddings(elmo, dialog):
   # Compute two different representation for each token.
